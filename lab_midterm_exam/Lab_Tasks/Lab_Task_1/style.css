@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hero-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  }
+  

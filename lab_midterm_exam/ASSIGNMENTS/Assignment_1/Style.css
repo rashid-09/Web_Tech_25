@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #2e3b4e;
+    color: white;
+    padding: 30px;
+    width: 30%;
+}
+
+.sidebar h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.sidebar h1 span {
+    font-weight: normal;
+}
+
+.sidebar .title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #f0c040;
+}
+
+.sidebar div {
+    margin-top: 30px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0c040;
+    display: inline-block;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.sidebar ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.main-content {
+    padding: 30px;
+    width: 70%;
+}
+
+.main-content div {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: #2e3b4e;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f0c040;
+    display: inline-block;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.job h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #444;
+}
