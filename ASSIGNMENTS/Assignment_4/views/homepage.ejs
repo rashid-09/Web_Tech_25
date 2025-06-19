@@ -1,0 +1,37 @@
+<section class="hero">
+  <div class="hero-content">
+    <p>SS25</p>
+    <h1>New Collection</h1>
+    <p>Functionality is key</p>
+    <a href="#" class="shop-now-btn">DISCOVER</a>
+  </div>
+</section>
+
+<div class="shop-slogan">
+  <h1>Functionality is Key</h1>
+  <p>Since 1851</p>
+  <a href="#" class="learn-more-btn">Learn More</a>
+</div>
+
+<section class="products">
+  <div class="product-container">
+    <div class="product-category">
+      <h1>Water Repellent Club Check</h1>
+      <p>Shop Now</p>
+    </div>
+
+    <% products.forEach(product => { %>
+  <div class="product">
+    <a href="/products/<%= product._id %>">
+      <img src="<%= product.image %>" alt="<%= product.name %>">
+      <p><%= product.name %></p>
+      <p>€<%= product.price %></p>
+    </a>
+    <form action="/add-to-cart/<%= product._id %>" method="POST">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+<% }) %>
+
+  </div>
+</section>

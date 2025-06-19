@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="login-main">
+        <img class="logo-img" src="https://aquascutum-active.com/cdn/shop/files/logo-aquascutum-active.png?v=1728474647" alt="">
+        <h1>Sign In</h1>
+        <form class="login-form" action="/login-submit" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="email" required />
+            </div>
+            <input type="submit" value="Login" />
+        </form>
+        <p>Don't have an account? <a href="/register">Signup</a> </p>
+      </div>
+    </div>
+  </body>
+</html>

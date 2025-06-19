@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.login-main h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.logo {
+  padding: 20px;
+  width: 150px;
+  height: auto;
+}
+.center-navbar ul li {
+  display: inline;
+  padding-left: 10px;
+}
+.hero {
+  background-image: url("https://aquascutum-active.com/cdn/shop/files/bannerapertura_mobile.jpg?v=1742550210&width=2100");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  color: white;
+}
+.hero-content {
+  justify-content: start;
+  max-width: 100%;
+  padding: 100px;
+  border-radius: 0;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+.shop-now-btn {
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.shop-now-btn:hover {
+  background-color: lightgray;
+}
+.shop-slogan {
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.shop-slogan h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.shop-slogan p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+.learn-more-btn {
+  background-color: #011c39;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.learn-more-btn:hover {
+  background-color: #02264b;
+}
+.right-navbar ul li {
+  display: inline;
+}
+.right-navbar i {
+  font-size: 30px;
+  padding-right: 25px;
+}
+.right-navbar i:hover {
+  font-size: 40px;
+  padding-right: 25px;
+}
+.product-container {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.product-category {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.product-category h1 {
+  color: #011c39;
+}
+.product {
+  border: 1px solid #e5e8eb;
+}
+.product:hover {
+  border: 1px solid black;
+}
+.product img {
+  width: 25vw;
+  height: auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  color: #001f3f;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #001f3f;
+  font-weight: 500;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section strong a {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.social ul li {
+  display: flex;
+  align-items: center;
+}
+
+.social ul li img {
+  margin-right: 8px;
+}
