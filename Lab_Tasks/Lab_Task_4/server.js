@@ -195,34 +195,22 @@ server.post("/remove-from-cart/:id", (req, res) => {
 });
 
 
+const localDB = "mongodb://127.0.0.1:27017/web_dev"; // Replace "yourDatabaseName"
 
-
-// server.use("/", require("./controllers/admin/admin.products.controller"));
-
-// server.get("/categories", (req, res) => {
-//   res.render("categories");
-// });
-// server.get("/", async (req, res) => {
-//   //   res.send("Hello AI Classs");
-//   let Product = require("./models/product.model");
-//   let products = await Product.find();
-//   // return res.send(products);
-//   res.render("homepage", { products });
-// });
-const DB = process.env.DATABASE.replace(
-  "<PASSWORD>",
-  process.env.DATABASE_PASSWORD
-);
 async function connectToDatabase() {
   try {
-    const connection = await mongoose.connect(DB, {});
-    console.log("Database connected successfully!");
+    const connection = await mongoose.connect(localDB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Local MongoDB connected successfully!");
   } catch (error) {
     console.error("Database connection error:", error);
   }
 }
 
 connectToDatabase();
+
 server.listen(4000, () => {
   console.log("Server Started at localhost:4000");
 });
