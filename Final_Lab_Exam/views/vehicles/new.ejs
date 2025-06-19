@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h2>Add New Vehicle</h2>
+  <form action="/vehicles" method="POST" enctype="multipart/form-data">
+    <input class="form-control mb-2" name="name" placeholder="Vehicle Name" required />
+    <input class="form-control mb-2" name="brand" placeholder="Brand" required />
+    <input class="form-control mb-2" name="price" type="number" placeholder="Price" required />
+    <select class="form-control mb-2" name="type" required>
+      <option value="">Select Type</option>
+      <option value="sedan">Sedan</option>
+      <option value="SUV">SUV</option>
+      <option value="truck">Truck</option>
+    </select>
+    <input type="file" name="image" class="form-control mb-3" required />
+    <button class="btn btn-success">Create</button>
+  </form>
+</div>

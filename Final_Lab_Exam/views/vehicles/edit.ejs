@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h2>Edit Vehicle</h2>
+  <form action="/vehicles/<%= vehicle._id %>" method="POST" enctype="multipart/form-data">
+    <input class="form-control mb-2" name="name" value="<%= vehicle.name %>" required />
+    <input class="form-control mb-2" name="brand" value="<%= vehicle.brand %>" required />
+    <input class="form-control mb-2" name="price" type="number" value="<%= vehicle.price %>" required />
+    <select class="form-control mb-2" name="type" required>
+      <option value="sedan" <%= vehicle.type === 'sedan' ? 'selected' : '' %>>Sedan</option>
+      <option value="SUV" <%= vehicle.type === 'SUV' ? 'selected' : '' %>>SUV</option>
+      <option value="truck" <%= vehicle.type === 'truck' ? 'selected' : '' %>>Truck</option>
+    </select>
+    <input type="file" name="image" class="form-control mb-3" />
+    <button class="btn btn-primary">Update</button>
+  </form>
+</div>

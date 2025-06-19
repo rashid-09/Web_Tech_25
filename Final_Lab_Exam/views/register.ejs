@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="main">
+      <% if (errorMessage) { %>
+        <div class="alert alert-danger">
+          <%= errorMessage %>
+        </div>
+      <% } %>
+
+      <% if (successMessage) { %>
+        <div class="alert alert-success">
+          <%= successMessage %>
+        </div>
+      <% } %>
+      
+      <div class="login-main">
+        <img class="logo-img" src="https://aquascutum-active.com/cdn/shop/files/logo-aquascutum-active.png?v=1728474647" alt="Logo">
+        <h1>Sign Up</h1>
+        <form class="login-form" action="/register-submit" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="fullName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required />
+          </div>
+          <input type="submit" value="Register" />
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+      </div>
+    </div>
+  </body>
+</html>
